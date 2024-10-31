@@ -1,0 +1,170 @@
+---
+output:
+pdf_document: default
+---
+<div style="text-align: center;">
+  <h1>Sahithi's Technical Writer Portfolio</h1>
+</div>
+<div class="content">
+<!-- Sidebar Navigation -->
+<div class="sidebar">
+  <h1>Sahithi Chandupatla</h1>
+  <ul>
+    <li><a href="#about">About Me</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#work">Sample Work</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</div>
+
+<div class="main-content">
+  
+## About Me {#about}
+<div style="background-color: #f9f9f9; border-radius: 5px;">
+Hey! I’m Sahithi Chandupatla, a Technical Writer based in Texas. I specialize in writing documentation for software development processes. My goal is to make complex information accessible to everyone. Besides writing user-friendly content, I have a keen eye for detail and excel in proofreading documents to ensure accuracy and clarity. I am committed to producing high-quality documentation that helps understanding and communication in technical environments.
+ <br/><br/>
+  <strong>Quote:</strong> "Writing is the painting🎨 of the voice. - Voltaire
+</div>
+
+## Experience {#experience}
+### Business Analyst/ Technical Writer 
+In my current role, I write detailed documentation for an Integrated Human Resource Management System (IHRMS) project. I focus on requirements gathering, process mapping, and version control. I write Standard Operating Procedures (SOPs) that outline best practices and guidelines for system usage so that all users have clear instructions to follow. I use Git for document versioning which allows seamless collaboration across teams and ensures all project documents are up-to-date and in sync. My documentation includes creating comprehensive specifications using Excel, Word, and Visio which standardizes technical documentation and makes requirements clear. I am actively involved in Agile practices, attending daily scrum meetings and sprint planning sessions to ensure I’m aligned with project goals and deliverables. This role has helped me to translate complex technical information into clear and user-friendly documentation.
+
+### Data Analyst Intern
+In my previous role as a Data Analyst Intern, I worked with senior data analysts and engineers in an Agile environment on a pricing optimization project. I supported model development through exploratory data analysis (EDA) using Python and SQL to extract insights from pricing data. I documented data analysis processes, findings, and model specifications to keep a clean project history for knowledge sharing and future reference. This role helped me to communicate analytical insights better and understand best practices in data documentation.
+
+## Skills {#skills}
+- 📝 **Documentation & Process Mapping**
+  - Requirements gathering
+  - Version Control (Git)
+  - Excel
+  - Visio
+
+- 📊 **Data Analysis & Visualization**
+  - Power BI
+  - Excel (Pivot Tables)
+  - Python
+  - R (Markdown)
+
+- ⚙️ **ETL & Data Management**
+  - SQL Server
+  - Pentaho
+  - AWS Glue
+
+- ☁️ **Cloud**
+  - Familiar with AWS EC2
+  - Familiar with AWS S3
+
+- 🛠️ **Tools & IDEs**
+  - R Studio
+  - Visual Studio
+
+- ✍️ **Technical Writing**
+  - SOPs (Standard Operating Procedures)
+  - Project Documentation
+  - Requirements Documentation 
+  - Proofreading 
+
+## Work {#work}
+As a Technical Writer, I love working in a fast-paced and collaborative environment where I create clear and user-friendly documentation and visual materials to help explain complex systems and processes. My day starts with requirements gathering, working closely with cross-functional teams including developers and project managers to collect and clarify information. I document these requirements meticulously so they are reflected in user manuals, standard operating procedures, and technical specifications. I use Git for version control so I can work seamlessly with the team and ensure all documentation is up to date and easily accessible. I also create visual aids like flowcharts and diagrams using Visio and Lucidchart to support my written documentation and help users understand. I proofread and edit thoroughly and participate in team meetings to align with project goals and incorporate feedback. My goal is to produce high-quality materials that enable users to navigate and use complex systems and ultimately improve communication and operational efficiency.
+
+### **Writing Examples:**
+- 📂 Project Documentation
+- 📋 Standard Procedures
+- 📄 Requirements Documentation
+- ✍️ Proofreading & Editing Documents
+
+<div class="highlight">
+  <strong>
+  Did you know?</strong> 
+  Clear documentation can improve team efficiency by 30%.
+  </strong> 
+</div>
+
+### **Visual Examples:**
+- Flowcharts (Visio, Lucidchart)
+
+```{r flowchart, echo=FALSE}
+library(DiagrammeR)
+
+grViz("
+digraph portfolio {
+  graph [layout = dot, rankdir = TB]
+
+  node [shape = box, style = filled, color = lightblue]
+
+  subgraph cluster_main {
+    label = 'Sahithi Chandupatla Portfolio Website';
+    fontsize = 20;
+
+    sahithi [label = 'Sahithi Chandupatla Portfolio Website', shape = plaintext, fontsize = 16]
+    sidebar [label = 'Sidebar \\n [About Me | Experience | Skills | Sample Work | Contact]', shape = box, style=filled, fillcolor=lightgrey]
+    
+    sahithi -> sidebar;
+
+    subgraph cluster_content {
+      label = '';
+      about_me [label = 'About Me', shape = box]
+      experience [label = 'Experience', shape = box]
+      skills [label = 'Skills', shape = box]
+      sample_work [label = 'Sample Work', shape = box]
+
+      sidebar -> about_me;
+      sidebar -> experience;
+      sidebar -> skills;
+      sidebar -> sample_work;
+    }
+  }
+}
+")
+```
+- Tables, Pivot Tables (Excel)
+
+```{r tables, echo=FALSE}
+# Load necessary libraries
+library(knitr)
+library(kableExtra)
+
+# Create a data frame
+table_data <- data.frame(
+  Title = c("Project Documentation", "User Manual", "Data Analysis Report", "Workflow Diagram"),
+  Type = c("Written", "Written", "Written", "Visual"),
+  Description = c("Comprehensive guide for project scope",
+                  "Step-by-step instructions for users",
+                  "Insights and visualizations from data",
+                  "Flow of processes in system usage"),
+  stringsAsFactors = FALSE
+)
+
+# Create a colorful table with pastel colors
+kable(table_data, format = "html", 
+      col.names = c("Title", "Type", "Description"), 
+      caption = "Documentation Samples") %>%
+  kable_styling(full_width = FALSE, position = "left", 
+                bootstrap_options = c("striped", "hover", "condensed", "responsive")) %>%
+  row_spec(0, background = "#AEEEEE", color = "black", bold = TRUE) %>%  # Header styling (Pastel Blue)
+  row_spec(1, background = "#FFFACD") %>%  # First row color (Pastel Yellow)
+  row_spec(2, background = "#AEEEEE") %>%  # Second row color (Pastel Blue)
+  row_spec(3, background = "#FFFACD") %>%  # Third row color (Pastel Yellow)
+  column_spec(1, bold = TRUE, color = "blue") %>%  # Bold and blue color for the first column
+  column_spec(3, width = "50em") %>%  # Adjust width for description column
+  add_header_above(c(" " = 1, "Documentation" = 2))  # Group header
+
+```
+- Graphs (Excel, PowerBI, R programming - ggplot)
+```{r sampledata, echo=FALSE}
+# Sample data
+Samples <- c("Sample A", "Sample B", "Sample C")
+values <- c(45, 78, 32)
+
+# Colorful bar plot of Samples
+barplot(values, names.arg = Samples, col = c("skyblue", "coral", "palegreen"),
+        main = "Colorful Bar Plot", xlab = "Category", ylab = "Values")
+
+```
+
+
+## Contact Me
+Email: sahithichandupatla@gmail.com
+Request through mail for writing samples( with subject: Request for writing samples)

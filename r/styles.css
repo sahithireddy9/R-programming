@@ -1,0 +1,122 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Sidebar Navigation */
+.sidebar {
+    background-color: #2E4C6E; /* Dark blue */
+    color: #ffffff;
+    width: 250px; /* Width of the sidebar */
+    position: fixed; /* Fixes the sidebar to the left */
+    height: 100%; /* Full height */
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+    overflow-y: auto; /* Enables scrolling if content overflows */
+    left: 0; /* Aligns the sidebar to the left edge */
+    top: 0; /* Ensures the sidebar starts at the top */
+}
+
+/* Main Content */
+
+.sidebar h1 {
+    font-size: 1.5em; /* Title size */
+    margin-bottom: 20px; /* Space below title */
+    text-align: center; /* Center the title */
+}
+
+.sidebar ul {
+    list-style-type: none; /* Removes default list styling */
+    padding: 0; /* No padding */
+}
+
+.sidebar li {
+    margin: 15px 0; /* Space between links */
+}
+
+.sidebar a {
+    color: #ffffff; /* Link color */
+    text-decoration: none; /* No underline */
+    font-size: 1.1em; /* Font size for links */
+}
+
+.sidebar a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Content Styles */
+
+/* Main Heading Style */
+.content h1 {
+    text-align: center; /* Center the main heading */
+    font-size: 2em; /* Size of the main heading */
+    color: #2E4C6E; /* Match the heading color to the sidebar color */
+    margin-bottom: 20px; /* Space below the main heading */
+}
+
+.content {
+    margin-left: 260px; /* Space for the sidebar */
+    padding: 20px; /* Padding for content area */
+}
+
+h2, h3 {
+    color: #2E4C6E; /* Dark blue for headers */
+}
+
+h2 {
+    border-bottom: 2px solid #2E4C6E; /* Underline for h2 */
+    padding-bottom: 10px; /* Space below the underline */
+}
+
+/* Table Styles */
+table {
+    width: 100%; /* Full width for tables */
+    border-collapse: collapse; /* Collapse borders */
+    margin-top: 20px; /* Space above tables */
+}
+
+th, td {
+    border: 1px solid #dddddd; /* Light gray borders */
+    text-align: left; /* Left alignment for text */
+    padding: 8px; /* Padding within cells */
+}
+
+th {
+    background-color: #2E4C6E; /* Dark blue header background */
+    color: white; /* White text in header */
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Light gray for even rows */
+}
+
+/* Graph Styles */
+.barplot {
+    margin: 20px 0; /* Space around bar plots */
+}
+
+/* Link Styles */
+a {
+    color: #2E4C6E; /* Dark blue links */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%; /* Full width for small screens */
+        height: auto; /* Auto height */
+        position: relative; /* Relative positioning */
+    }
+
+    .content {
+        margin-left: 0; /* No margin on small screens */
+    }
+}
